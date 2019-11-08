@@ -1,3 +1,5 @@
+//Back-end logic for pizza order--
+
 function PizzaOrder(size, crust) {
   this.size = size,
   this.crust = crust,

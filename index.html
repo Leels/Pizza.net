@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
-    <title>Pizza.net</title>
-  </head>
-  <body>
+  <title>Pizza.net</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Pizza.net</h1>
     <form class="pizza-order">
+      <!-- beverages -->
+      <div class="form-group">
+        <h4>Beverages ($3.00 Each):</h4>
+        <div class="checkbox">
+          <label><input name="beverages" type="checkbox" value="pepsi">Pepsi</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="beverages" type="checkbox" value="diet-pepsi">Diet Pepsi</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="beverages" type="checkbox" value="7-up">7-Up</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="beverages" type="checkbox" value="mt-dew">Mountain Dew</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="beverages" type="checkbox" value="mug-rootbeer">Mug Rootbeer</label>
+        </div>
+      </div>
+      <!-- toppings -->
+        <h3>Toppings Menu</h3>
+        <!-- meat toppings -->
+        <div class="form-group">
+          <h4>Meats ($2.50 Each):</h4>
+          <div class="checkbox">
+            <label><input name="meats" type="checkbox" value="pepperoni">Pepperoni</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="meats" type="checkbox" value="sausage">Sausage</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="meats" type="checkbox" value="salami">Salami</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="meats" type="checkbox" value="anchovies">Anchovies</label>
+          </div>
+        </div>
+        <!-- veggie toppings -->
+        <div class="form-group">
+          <h4>Vegetables ($1.50 Each):</h4>
+          <div class="checkbox">
+            <label><input name="vegetables" type="checkbox" value="mushrooms">Mushrooms</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="vegetables" type="checkbox" value="peppers">Peppers</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="vegetables" type="checkbox" value="olives">Olives</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="vegetables" type="checkbox" value="onions">Onions</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="vegetables" type="checkbox" value="garlic">Garlic</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="vegetables" type="checkbox" value="tomatoes">Tomatoes</label>
+          </div>
+          <div class="checkbox">
+            <label><input name="vegetables" type="checkbox" value="x-cheese">Ex. Cheese</label>
+          </div>
+        </div>
 
-    </form>
+        <button class="btn btn-primary" type="submit">Send Order Now!</button>
+      </form>
+    </div>
   </body>
-</html>
+  </html>
