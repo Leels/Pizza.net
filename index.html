@@ -4,13 +4,42 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts2.js"></script>
   <title>Pizza.net</title>
 </head>
 <body>
   <div class="container">
     <h1>Pizza.net</h1>
     <form id="pizza-order">
+      <!-- size -->
+      <div class="form-group">
+        <h4>Select a Size:</h4>
+        <div class="radio">
+          <label><input name="size" type="radio" value="small">Small (12") $8</label>
+        </div>
+        <div class="radio">
+          <label><input name="size" type="radio" value="medium">Medium (16") $10</label>
+        </div>
+        <div class="radio">
+          <label><input name="size" type="radio" value="large">Large (20") $12</label>
+        </div>
+        <div class="radio">
+          <label><input name="size" type="radio" value="x-large">X-Large (24") $14</label>
+        </div>
+      </div>
+      <!-- crust -->
+      <div class="form-group">
+        <h4>Select a Style:</h4>
+        <div class="radio">
+          <label><input name="crust" type="radio" value="regular">Regular Crust</label>
+        </div>
+        <div class="radio">
+          <label><input name="crust" type="radio" value="thin-crispy">Thin & Crispy</label>
+        </div>
+        <div class="radio">
+          <label><input name="crust" type="radio" value="deep-dish">Deep Dish ($2 extra)</label>
+        </div>
+      </div>
       <!-- beverages -->
       <div class="form-group">
         <h4>Beverages ($3.00 Each):</h4>
@@ -31,55 +60,55 @@
         </div>
       </div>
       <!-- toppings -->
-        <h3>Toppings Menu</h3>
-        <!-- meat toppings -->
-        <div class="form-group">
-          <h4>Meats ($2.50 Each):</h4>
-          <div class="checkbox">
-            <label><input name="meats" type="checkbox" value="pepperoni">Pepperoni</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="meats" type="checkbox" value="sausage">Sausage</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="meats" type="checkbox" value="salami">Salami</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="meats" type="checkbox" value="anchovies">Anchovies</label>
-          </div>
+      <h3>Toppings Menu</h3>
+      <!-- meat toppings -->
+      <div class="form-group">
+        <h4>Meats ($2.50 Each):</h4>
+        <div class="checkbox">
+          <label><input name="meats" type="checkbox" value="pepperoni">Pepperoni</label>
         </div>
-        <!-- veggie toppings -->
-        <div class="form-group">
-          <h4>Vegetables ($1.50 Each):</h4>
-          <div class="checkbox">
-            <label><input name="veggies" type="checkbox" value="mushrooms">Mushrooms</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="veggies" type="checkbox" value="peppers">Peppers</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="veggies" type="checkbox" value="olives">Olives</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="veggies" type="checkbox" value="onions">Onions</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="veggies" type="checkbox" value="garlic">Garlic</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="veggies" type="checkbox" value="tomatoes">Tomatoes</label>
-          </div>
-          <div class="checkbox">
-            <label><input name="veggies" type="checkbox" value="x-cheese">Ex. Cheese</label>
-          </div>
+        <div class="checkbox">
+          <label><input name="meats" type="checkbox" value="sausage">Sausage</label>
         </div>
-
-        <button class="btn btn-primary" type="submit">Send Order Now!</button>
-      </form>
-
-      <div id="total">
-
+        <div class="checkbox">
+          <label><input name="meats" type="checkbox" value="salami">Salami</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="meats" type="checkbox" value="anchovies">Anchovies</label>
+        </div>
       </div>
+      <!-- veggie toppings -->
+      <div class="form-group">
+        <h4>Vegetables ($1.50 Each):</h4>
+        <div class="checkbox">
+          <label><input name="veggies" type="checkbox" value="mushrooms">Mushrooms</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="veggies" type="checkbox" value="peppers">Peppers</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="veggies" type="checkbox" value="olives">Olives</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="veggies" type="checkbox" value="onions">Onions</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="veggies" type="checkbox" value="garlic">Garlic</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="veggies" type="checkbox" value="tomatoes">Tomatoes</label>
+        </div>
+        <div class="checkbox">
+          <label><input name="veggies" type="checkbox" value="x-cheese">Ex. Cheese</label>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Send Order Now!</button>
+    </form>
+
+    <div id="total">
+
     </div>
-  </body>
-  </html>
+  </div>
+</body>
+</html>
