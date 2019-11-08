@@ -50,16 +50,16 @@ $(document).ready(function(){
   $("form#pizza-order").submit(function(event){
     event.preventDefault();
 
-    console.log("inputBeverages");
     // var inputSize =
     // var inputCrust =
-    var inputBeverages = $('input:checkbox[name=beverages]:checked').each(function() {
-      return $(this).val();});
+    var inputBeverages = $('input:checkbox[name=beverages]:checked').map(function() {
+      return this.value;}).get();
     var inputMeatToppings = $('input:checkbox[name=meats]:checked').map(function() {
       return this.value;}).get();
     var inputVeggieToppings = $('input:checkbox[name=veggies]:checked').map(function() {
       return this.value;}).get();
-    var newPizzaOrder = new PizzaOrder(inputSize, inputCrust, inputBeverages, inputMeatToppings, inputVeggieToppings);
+    var newPizzaOrder = new PizzaOrder(inputBeverages, inputMeatToppings, inputVeggieToppings);
+    console.log(inputBeverages);
 
     newPizzaOrder.orderPrice();
 
