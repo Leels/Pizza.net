@@ -63,5 +63,7 @@ $(document).ready(function(){
     $("#orderBeverages").text(inputBeverages);
     $("#orderPrice").text("$" + totalPrice);
 
+    $("#confirmation").show();
+
   });
 });

@@ -1,5 +1,10 @@
 body {
   font-family: 'Abril Fatface', cursive;
+  text-shadow: 2px 2px black;
+}
+
+#confirmation {
+  display: none;
 }
 
 .banner {
@@ -21,6 +26,13 @@ h4 {
 }
 h2 {
   color:  #5cd65c;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 250%;
+}
+
+#prices {
+  font-size: 60%
 }
 
 .card {
@@ -39,31 +51,22 @@ img {
   height: auto;
   float: left;
 }
+.card {
+  padding: inherit;
+}
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1000px) {
   .banner {
       text-align: right;
-      background-image: linear-gradient(#ff6600, #ffdd99);
-      background: auto 100%;
-      padding-right: 50px;
-      padding-left: 40px;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    width: 20%;
-    height: auto;
-    float: left;
+      padding-right: 320px;
+      padding-left: 220px;
   }
 
   h1 {
-    color: white;
     font-size: 900%;
   }
 
   h4 {
-    color: #cc5200;
-    text-shadow: none;
     font-size: 250%;
   }
 
