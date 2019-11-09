@@ -13,66 +13,114 @@
   <div class="container-fluid">
     <div class="jumbotron jumbotron-fluid banner">
       <div class="container">
-
-
         <img src="images/pizza.png" alt="">
-      <h1>Pizza.Net</h1>
-      <h4>We deliver the best pizza in Cyberspace!</h4>
-    </div>
+        <h1>Pizza.Net</h1>
+        <h4>We deliver the best pizza in Cyberspace!</h4>
+      </div>
     </div>
     <form id="pizza-order">
-      <!-- toppings -->
-      <div class="col-md-6 toppings">
-        <div class="card">
-          <h2>Toppings Menu</h2>
-          <hr>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-
-                <h2>Meats <span id="prices">($2.50 each):</span></h2>
-                <div class="checkbox">
-                  <h3><input name="meats" type="checkbox" value="pepperoni "> Pepperoni</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="meats" type="checkbox" value="sausage "> Sausage</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="meats" type="checkbox" value="salami "> Salami</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="meats" type="checkbox" value="anchovies "> Anchovies</h3>
-                </div>
-              </div>
+      <div class="row">
+        <!-- size -->
+        <div class="col-md-6">
+          <div class="form-group card">
+            <h2>Select a Size:</h2>
+            <div class="radio">
+              <h3><input name="size" type="radio" value="small"> Small (12")  <span id="prices">$8</span></h3>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <h2>Vegetables <span id="prices">($1.50 each):</span></h2>
-                <div class="checkbox">
-                  <h3><input name="veggies" type="checkbox" value="mushrooms "> Mushrooms</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="veggies" type="checkbox" value="peppers "> Peppers</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="veggies" type="checkbox" value="olives "> Olives</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="veggies" type="checkbox" value="onions "> Onions</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="veggies" type="checkbox" value="garlic "> Garlic</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="veggies" type="checkbox" value="tomatoes "> Tomatoes</h3>
-                </div>
-                <div class="checkbox">
-                  <h3><input name="veggies" type="checkbox" value="ex. cheese "> Ex. Cheese</h3>
-                </div>
-                <hr>
-              </div>
+            <div class="radio">
+              <h3><input name="size" type="radio" value="medium"> Medium (16")  <span id="prices">$10</span></h3>
+            </div>
+            <div class="radio">
+              <h3><input name="size" type="radio" value="large"> Large (20")  <span id="prices">$12</span></h3>
+            </div>
+            <div class="radio">
+              <h3><input name="size" type="radio" value="x-large"> X-Large (24")  <span id="prices">$14</span></h3>
             </div>
           </div>
+          <!-- crust -->
+          <div class="form-group card">
+            <h2>Select a Style:</h2>
+            <div class="radio">
+              <h3><input name="crust" type="radio" value="regular crust"> Regular Crust</h3>
+            </div>
+            <div class="radio">
+              <h3><input name="crust" type="radio" value="thin & crispy"> Thin & Crispy</h3>
+            </div>
+            <div class="radio">
+              <h3><input name="crust" type="radio" value="deep-dish"> Deep Dish  <span id="prices">($2 extra)</span></h3>
+            </div>
+          </div>
+          <!-- beverages -->
+          <div class="form-group card">
+            <h2>Beverages <span id="prices">($3.00 each):</span></h2>
+            <div class="checkbox">
+              <h3><input name="beverages" type="checkbox" value=" Pepsi"> Pepsi </h3>
+            </div>
+            <div class="checkbox">
+              <h3><input name="beverages" type="checkbox" value="Diet-Pepsi "> Diet Pepsi</h3>
+            </div>
+            <div class="checkbox">
+              <h3><input name="beverages" type="checkbox" value="7-up "> 7-Up</h3>
+            </div>
+            <div class="checkbox">
+              <h3><input name="beverages" type="checkbox" value="Mountain Dew "> Mountain Dew</h3>
+            </div>
+            <div class="checkbox">
+              <h3><input name="beverages" type="checkbox" value="Mr. Pibb "> Mr. Pibb</h3>
+            </div>
+          </div>
+        </div>
+        <!-- toppings -->
+        <div class="col-md-6 toppings">
+          <div class="card">
+            <h2>Toppings Menu</h2>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <h2>Meats <span id="prices">($2.50 each):</span></h2>
+                  <div class="checkbox">
+                    <h3><input name="meats" type="checkbox" value="pepperoni "> Pepperoni</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="meats" type="checkbox" value="sausage "> Sausage</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="meats" type="checkbox" value="salami "> Salami</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="meats" type="checkbox" value="anchovies "> Anchovies</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <h2>Vegetables <span id="prices">($1.50 each):</span></h2>
+                  <div class="checkbox">
+                    <h3><input name="veggies" type="checkbox" value="mushrooms "> Mushrooms</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="veggies" type="checkbox" value="peppers "> Peppers</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="veggies" type="checkbox" value="olives "> Olives</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="veggies" type="checkbox" value="onions "> Onions</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="veggies" type="checkbox" value="garlic "> Garlic</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="veggies" type="checkbox" value="tomatoes "> Tomatoes</h3>
+                  </div>
+                  <div class="checkbox">
+                    <h3><input name="veggies" type="checkbox" value="ex. cheese "> Ex. Cheese</h3>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
             <button class="btn btn-primary btn-rounded" type="submit">Send Order Now!</button>
             <div id="confirmation">
               <p>Please confirm your order:</p>
@@ -94,59 +142,8 @@
             </div>
           </div>
         </div>
-
-      <!-- size -->
-      <div class="col-md-6">
-        <div class="form-group card">
-          <h2>Select a Size:</h2>
-          <div class="radio">
-            <h3><input name="size" type="radio" value="small"> Small (12")  <span id="prices">$8</span></h3>
-          </div>
-          <div class="radio">
-            <h3><input name="size" type="radio" value="medium"> Medium (16")  <span id="prices">$10</span></h3>
-          </div>
-          <div class="radio">
-            <h3><input name="size" type="radio" value="large"> Large (20")  <span id="prices">$12</span></h3>
-          </div>
-          <div class="radio">
-            <h3><input name="size" type="radio" value="x-large"> X-Large (24")  <span id="prices">$14</span></h3>
-          </div>
-        </div>
-        <!-- crust -->
-        <div class="form-group card">
-          <h2>Select a Style:</h2>
-          <div class="radio">
-            <h3><input name="crust" type="radio" value="regular crust"> Regular Crust</h3>
-          </div>
-          <div class="radio">
-            <h3><input name="crust" type="radio" value="thin & crispy"> Thin & Crispy</h3>
-          </div>
-          <div class="radio">
-            <h3><input name="crust" type="radio" value="deep-dish"> Deep Dish  <span id="prices">($2 extra)</span></h3>
-          </div>
-        </div>
-        <!-- beverages -->
-        <div class="form-group card">
-          <h2>Beverages <span id="prices">($3.00 each):</span></h2>
-          <div class="checkbox">
-            <h3><input name="beverages" type="checkbox" value=" Pepsi"> Pepsi </h3>
-          </div>
-          <div class="checkbox">
-            <h3><input name="beverages" type="checkbox" value="Diet-Pepsi "> Diet Pepsi</h3>
-          </div>
-          <div class="checkbox">
-            <h3><input name="beverages" type="checkbox" value="7-up "> 7-Up</h3>
-          </div>
-          <div class="checkbox">
-            <h3><input name="beverages" type="checkbox" value="Mountain Dew "> Mountain Dew</h3>
-          </div>
-          <div class="checkbox">
-            <h3><input name="beverages" type="checkbox" value="Mr. Pibb "> Mr. Pibb</h3>
-          </div>
-        </div>
       </div>
     </form>
-
     <div id="confirmation">
       <p>Please confirm your order:</p>
       <ul>
