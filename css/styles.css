@@ -1,3 +1,7 @@
+body {
+  font-family: 'Abril Fatface', cursive;
+}
+
 .jumbotron {
   text-align: center;
     background-image: linear-gradient(#ff6600, #ffdd99);
@@ -5,8 +9,21 @@
 
 h1 {
   color: white;
+  font-size: 500%;
 }
 
-h4 {
+h3 {
   color: #cc5200;
+}
+h2 {
+  color:  #5cd65c;
+}
+
+.card {
+  background-color: #0000cc;
+  color: white;
+}
+
+.toppings {
+  float: right;
 }
