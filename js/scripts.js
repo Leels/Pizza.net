@@ -3,9 +3,9 @@
 function PizzaOrder(size, crust, beverages, meatToppings, veggieToppings) {
   this.size = size,
   this.crust = crust,
-  this.beverages = []
-  this.meatToppings = []
-  this.veggieToppings = []
+  this.beverages = beverages,
+  this.meatToppings = meatToppings,
+  this.veggieToppings = veggieToppings,
   this.price = 0
 }
 
@@ -35,13 +35,9 @@ PizzaOrder.prototype.orderPrice = function() {
   for (var i = 0; i < this.veggieToppings.length; i++) {
       this.price += 1.5;
     }
-    console.log(this.price)
-    return this.price
-}
 
-PizzaOrder.prototype.confirmation = function() {
-  return "You ordered a " this.size + " " + this.crust + " pizza with " this.meatToppings + this.veggieToppings + this.beverages + "$" + this.price).toFixed(2);
-  console.log(this.size)
+    return this.price.toFixed(2);
+    console.log(this.price)
 }
 
 //Front-end logic for pizza order
@@ -61,6 +57,11 @@ $(document).ready(function(){
     var newPizzaOrder = new PizzaOrder(inputSize, inputCrust, inputBeverages, inputMeatToppings, inputVeggieToppings);
     var totalPrice = newPizzaOrder.orderPrice();
 
-    $("#total").text('<li><span class="order">' + newPizzaOrder.confirmation() + '</span></li>');
+    $("#orderSize").text(inputSize);
+    $("#orderCrust").text(inputCrust);
+    $("#orderToppings").text(inputMeatToppings + inputVeggieToppings);
+    $("#orderBeverages").text(inputBeverages);
+    $("#orderPrice").text("$" + totalPrice);
+
   });
 });

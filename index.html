@@ -11,7 +11,7 @@
   <div class="container">
     <div class="jumbotron">
     <h1>Pizza.Net</h1>
-    <h3>We deliver the best pizza in Cyberspace!</h3>
+    <h4>We deliver the best pizza in Cyberspace!</h4>
   </div>
     <form id="pizza-order">
       <!-- size -->
@@ -34,10 +34,10 @@
       <div class="form-group">
         <h4>Select a Style:</h4>
         <div class="radio">
-          <label><input name="crust" type="radio" value="regular">Regular Crust</label>
+          <label><input name="crust" type="radio" value="regular crust">Regular Crust</label>
         </div>
         <div class="radio">
-          <label><input name="crust" type="radio" value="thin-crispy">Thin & Crispy</label>
+          <label><input name="crust" type="radio" value="thin & crispy">Thin & Crispy</label>
         </div>
         <div class="radio">
           <label><input name="crust" type="radio" value="deep-dish">Deep Dish ($2 extra)</label>
@@ -47,19 +47,19 @@
       <div class="form-group">
         <h4>Beverages ($3.00 Each):</h4>
         <div class="checkbox">
-          <label><input name="beverages" type="checkbox" value="pepsi">Pepsi</label>
+          <label><input name="beverages" type="checkbox" value=" Pepsi">Pepsi </label>
         </div>
         <div class="checkbox">
-          <label><input name="beverages" type="checkbox" value="diet-pepsi">Diet Pepsi</label>
+          <label><input name="beverages" type="checkbox" value="Diet-Pepsi ">Diet Pepsi</label>
         </div>
         <div class="checkbox">
-          <label><input name="beverages" type="checkbox" value="7-up">7-Up</label>
+          <label><input name="beverages" type="checkbox" value="7-up ">7-Up</label>
         </div>
         <div class="checkbox">
-          <label><input name="beverages" type="checkbox" value="mt-dew">Mountain Dew</label>
+          <label><input name="beverages" type="checkbox" value="Mountain Dew ">Mountain Dew</label>
         </div>
         <div class="checkbox">
-          <label><input name="beverages" type="checkbox" value="mug-rootbeer">Mug Rootbeer</label>
+          <label><input name="beverages" type="checkbox" value="Mug Rootbeer ">Mug Rootbeer</label>
         </div>
       </div>
       <!-- toppings -->
@@ -68,41 +68,41 @@
       <div class="form-group">
         <h4>Meats ($2.50 Each):</h4>
         <div class="checkbox">
-          <label><input name="meats" type="checkbox" value="pepperoni">Pepperoni</label>
+          <label><input name="meats" type="checkbox" value="pepperoni ">Pepperoni</label>
         </div>
         <div class="checkbox">
-          <label><input name="meats" type="checkbox" value="sausage">Sausage</label>
+          <label><input name="meats" type="checkbox" value="sausage ">Sausage</label>
         </div>
         <div class="checkbox">
-          <label><input name="meats" type="checkbox" value="salami">Salami</label>
+          <label><input name="meats" type="checkbox" value="salami ">Salami</label>
         </div>
         <div class="checkbox">
-          <label><input name="meats" type="checkbox" value="anchovies">Anchovies</label>
+          <label><input name="meats" type="checkbox" value="anchovies ">Anchovies</label>
         </div>
       </div>
       <!-- veggie toppings -->
       <div class="form-group">
         <h4>Vegetables ($1.50 Each):</h4>
         <div class="checkbox">
-          <label><input name="veggies" type="checkbox" value="mushrooms">Mushrooms</label>
+          <label><input name="veggies" type="checkbox" value="mushrooms ">Mushrooms</label>
         </div>
         <div class="checkbox">
-          <label><input name="veggies" type="checkbox" value="peppers">Peppers</label>
+          <label><input name="veggies" type="checkbox" value="peppers ">Peppers</label>
         </div>
         <div class="checkbox">
-          <label><input name="veggies" type="checkbox" value="olives">Olives</label>
+          <label><input name="veggies" type="checkbox" value="olives ">Olives</label>
         </div>
         <div class="checkbox">
-          <label><input name="veggies" type="checkbox" value="onions">Onions</label>
+          <label><input name="veggies" type="checkbox" value="onions ">Onions</label>
         </div>
         <div class="checkbox">
-          <label><input name="veggies" type="checkbox" value="garlic">Garlic</label>
+          <label><input name="veggies" type="checkbox" value="garlic ">Garlic</label>
         </div>
         <div class="checkbox">
-          <label><input name="veggies" type="checkbox" value="tomatoes">Tomatoes</label>
+          <label><input name="veggies" type="checkbox" value="tomatoes ">Tomatoes</label>
         </div>
         <div class="checkbox">
-          <label><input name="veggies" type="checkbox" value="x-cheese">Ex. Cheese</label>
+          <label><input name="veggies" type="checkbox" value="ex. cheese ">Ex. Cheese</label>
         </div>
       </div>
 
@@ -110,7 +110,13 @@
     </form>
 
     <div id="confirmation">
-
+      <p>Please confirm your order:</p>
+      <ul>
+        <li>One <span id="orderSize"></span> <span id="orderCrust"></span> pizza</li>
+        <li>Toppings: <span id="orderToppings"></span></li>
+        <li>Beverages: <span id="orderBeverages"></span></li>
+        <li>Total Price: <span id="orderPrice"></span></li>
+      </ul>
     </div>
   </div>
 </body>
