@@ -1,9 +1,10 @@
 //Back-end logic for pizza order--
 
-function PizzaOrder(size, crust, beverages, meatToppings, veggieToppings) {
+function PizzaOrder(size, crust, beverages, combo, meatToppings, veggieToppings) {
   this.size = size,
   this.crust = crust,
   this.beverages = beverages,
+  this.combo = combo,
   this.meatToppings = meatToppings,
   this.veggieToppings = veggieToppings,
   this.price = 0
@@ -20,12 +21,18 @@ PizzaOrder.prototype.orderPrice = function() {
      this.price +=14;
   }
 
-  if (this.crust == "deep-dish") {
+  if (this.crust === "deep-dish") {
     this.price +=2;
   }
 
+  if (this.combo === "meat-combo") {
+    this.price +=6;
+  } else if (this.combo === "veggie-combo") {
+    this.price +=4;
+  }
+
   for (var i = 0; i < this.beverages.length; i++) {
-      this.price += 2;
+      this.price += 3;
     }
 
   for (var i = 0; i < this.meatToppings.length; i++) {
@@ -37,7 +44,6 @@ PizzaOrder.prototype.orderPrice = function() {
     }
 
     return this.price.toFixed(2);
-    console.log(this.price)
 }
 
 //Front-end logic for pizza order
@@ -50,16 +56,17 @@ $(document).ready(function(){
     var inputCrust = $('input[name=crust]:checked').val();
     var inputBeverages = $('input:checkbox[name=beverages]:checked').map(function() {
       return this.value;}).get();
+    var inputCombo = $('input[name=combo]:checked').val();
     var inputMeatToppings = $('input:checkbox[name=meats]:checked').map(function() {
       return this.value;}).get();
     var inputVeggieToppings = $('input:checkbox[name=veggies]:checked').map(function() {
       return this.value;}).get();
-    var newPizzaOrder = new PizzaOrder(inputSize, inputCrust, inputBeverages, inputMeatToppings, inputVeggieToppings);
+    var newPizzaOrder = new PizzaOrder(inputSize, inputCrust, inputBeverages, inputCombo, inputMeatToppings, inputVeggieToppings);
     var totalPrice = newPizzaOrder.orderPrice();
 
     $("#orderSize").text(inputSize);
     $("#orderCrust").text(inputCrust);
-    $("#orderToppings").text(inputMeatToppings + inputVeggieToppings);
+    $("#orderToppings").text(inputCombo + inputMeatToppings + inputVeggieToppings);
     $("#orderBeverages").text(inputBeverages);
     $("#orderPrice").text("$" + totalPrice);
 

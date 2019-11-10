@@ -78,6 +78,15 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
+                  <div class="radio">
+                    <h3><input name="combo" type="radio" value="meat-combo"> <strong>Deluxe Combo </strong><span id="prices">add $6</span></h3>
+                  </div>
+                  <div class="radio">
+                    <h3><input name="combo" type="radio" value="veggie-combo"><strong>Veggie Combo </strong><span id="prices">add $4</span></h3>
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
                   <h2>Meats <span id="prices">($2.50 each):</span></h2>
                   <div class="checkbox">
                     <h3><input name="meats" type="checkbox" value="pepperoni "> Pepperoni</h3>
@@ -95,7 +104,7 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <h2>Vegetables <span id="prices">($1.50 each):</span></h2>
+                  <h2>Veggies <span id="prices">($1.50 each):</span></h2>
                   <div class="checkbox">
                     <h3><input name="veggies" type="checkbox" value="mushrooms "> Mushrooms</h3>
                   </div>
@@ -121,16 +130,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary btn-rounded" type="submit">Send Order Now!</button>
-            <div id="confirmation">
-              <p>Please confirm your order:</p>
-              <ul>
-                <li>One <span id="orderSize"></span> <span id="orderCrust"></span> pizza</li>
-                <li>Toppings: <span id="orderToppings"></span></li>
-                <li>Beverages: <span id="orderBeverages"></span></li>
-                <li>Price: <span id="orderPrice"></span></li>
-              </ul>
-            </div>
+            <button class="submit-btn" type="submit">Send Order Now!</button>
             <div id="confirmation">
               <p>Please confirm your order:</p>
               <ul>
@@ -144,15 +144,6 @@
         </div>
       </div>
     </form>
-    <div id="confirmation">
-      <p>Please confirm your order:</p>
-      <ul>
-        <li>One <span id="orderSize"></span> <span id="orderCrust"></span> pizza</li>
-        <li>Toppings: <span id="orderToppings"></span></li>
-        <li>Beverages: <span id="orderBeverages"></span></li>
-        <li>Price: <span id="orderPrice"></span></li>
-      </ul>
-    </div>
   </div>
 </body>
 </html>

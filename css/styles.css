@@ -55,6 +55,20 @@ img {
   padding: inherit;
 }
 
+.submit-btn {
+  background-color: black;
+  border: solid #0099ff;
+  color: yellow;
+  font-family: 'Abril Fatface', cursive;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px 140px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
 @media screen and (min-width: 1000px) {
   .banner {
       text-align: right;
