@@ -31,6 +31,12 @@ h2 {
   font-size: 250%;
 }
 
+h2#confirmation {
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 2px 2px #cc5200;
+}
+
 #prices {
   font-size: 60%
 }
@@ -42,6 +48,7 @@ h2 {
 
 .toppings {
   float: right;
+  margin-bottom: 15px;
 }
 
 img {

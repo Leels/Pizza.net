@@ -25,7 +25,7 @@
           <div class="form-group card">
             <h2>Select a Size:</h2>
             <div class="radio">
-              <h3><input name="size" type="radio" value="small"> Small (12")  <span id="prices">$8</span></h3>
+              <h3><input name="size" type="radio" value="small" checked> Small (12")  <span id="prices">$8</span></h3>
             </div>
             <div class="radio">
               <h3><input name="size" type="radio" value="medium"> Medium (16")  <span id="prices">$10</span></h3>
@@ -41,7 +41,7 @@
           <div class="form-group card">
             <h2>Select a Style:</h2>
             <div class="radio">
-              <h3><input name="crust" type="radio" value="regular crust"> Regular Crust</h3>
+              <h3><input name="crust" type="radio" value="regular crust" checked> Regular Crust</h3>
             </div>
             <div class="radio">
               <h3><input name="crust" type="radio" value="thin & crispy"> Thin & Crispy</h3>
@@ -72,7 +72,7 @@
         </div>
         <!-- toppings -->
         <div class="col-md-6 toppings">
-          <div class="card">
+          <div class="card h-100">
             <h2>Toppings Menu</h2>
             <hr>
             <div class="row">
@@ -126,20 +126,21 @@
                   <div class="checkbox">
                     <h3><input name="veggies" type="checkbox" value="ex. cheese "> Ex. Cheese</h3>
                   </div>
-                  <hr>
+                  <br>
                 </div>
               </div>
             </div>
+            <!-- <div id="confirmation"> -->
+              <h2 id="confirmation">Price: <span id="orderPrice"></span></h2>
+            <!-- </div> -->
             <button class="submit-btn" type="submit">Send Order Now!</button>
-            <div id="confirmation">
-              <p>Please confirm your order:</p>
-              <ul>
+              <!-- <p>Please confirm your order:</p> -->
+              <!-- <ul>
                 <li>One <span id="orderSize"></span> <span id="orderCrust"></span> pizza</li>
                 <li>Toppings: <span id="orderToppings"></span></li>
                 <li>Beverages: <span id="orderBeverages"></span></li>
                 <li>Price: <span id="orderPrice"></span></li>
-              </ul>
-            </div>
+              </ul> -->
           </div>
         </div>
       </div>
