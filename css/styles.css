@@ -1,10 +1,6 @@
 /* v CSS for order form */
 
-#pizza-order, #confirmation {
-  display: none;
-}
-
-#initially-hidden {
+#pizza-order, #confirmation, #initially-hidden, .final {
   display: none;
 }
 
@@ -16,7 +12,7 @@ body {
 .banner {
     padding-left: 40px;
     padding-right: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-image: linear-gradient(#ff6600, #ffdd99);
     border: solid 5px #ffcc00;
     background: auto 100%;
@@ -150,3 +146,30 @@ img {
 }
 
  /* ^ CSS for intro page*/
+
+
+ /* v CSS for final page*/
+ .final img {
+   display: block;
+   width: 80%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20%
+ }
+
+  .final {
+   background-color: #0000cc;
+   border: solid 8px #ffcc00;
+   text-align: center;
+   font-family: 'Abril Fatface', cursive;
+   text-shadow: 2px 2px black;
+   color: white;
+ }
+
+ .final h2 {
+   color: white;
+   padding-top: 35px;
+ }
+
+  /* ^ CSS for final page*/

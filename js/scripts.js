@@ -52,12 +52,10 @@ $(document).ready(function(){
   $("form#customer-info").submit(function(event){
     event.preventDefault();
 
-    var nameInput = $("input#name").val();
+    var nameInput = $("input#customerName").val();
 
     $("#customer-info").hide();
     $("#pizza-order").slideDown("slow");
-  });
-  });
 
 //Front-end logic for pizza order//
 
@@ -87,5 +85,14 @@ $(document).ready(function(){
     $(".submit-btn").hide();
     $("#initially-hidden").show();
 
+
+    $(".send-order-btn").click(function(){
+      $("#pizza-order").hide();
+      $(".final").slideDown("slow");
+      });
+
   });
+});
+$("#name").text(nameInput).val();
+});
 });
