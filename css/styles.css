@@ -1,3 +1,5 @@
+/* v CSS for order form */
+
 body {
   font-family: 'Abril Fatface', cursive;
   text-shadow: 2px 2px black;
@@ -11,6 +13,7 @@ body {
     padding-left: 40px;
     padding-right: 10px;
     background-image: linear-gradient(#ff6600, #ffdd99);
+    border: solid 5px #ffcc00;
     background: auto 100%;
     text-align: center;
 }
@@ -44,6 +47,7 @@ h2#confirmation {
 .card {
   background-color: #0000cc;
   color: white;
+  border-radius: 20px;
 }
 
 .toppings {
@@ -92,4 +96,4 @@ img {
     font-size: 250%;
   }
 
-}
+/* ^ CSS for order form */

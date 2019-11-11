@@ -1,3 +1,4 @@
+/* v CSS for intro page*/
 img {
   display: block;
   width: 100%;
@@ -7,7 +8,7 @@ img {
   margin-top: 20%
 }
 
-.intro {
+.customer-info {
   background-color: #e63900;
   border: solid 8px #ffcc00;
   text-align: center;
@@ -24,9 +25,10 @@ img {
   border: solid 5px #ffcc00;
   margin-bottom: 10%;
   margin-top: 5%;
-  min
+  min-height: 65%
 }
 
 input, label {
   margin: 10px
 }
+ /* ^ CSS for intro page*/
