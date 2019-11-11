@@ -56,6 +56,7 @@ $(document).ready(function(){
 
     $("#customer-info").hide();
     $("#pizza-order").slideDown("slow");
+    $("#name").text(nameInput).val();
 
 //Front-end logic for pizza order//
 
@@ -93,6 +94,6 @@ $(document).ready(function(){
 
   });
 });
-$("#name").text(nameInput).val();
+
 });
 });

@@ -81,6 +81,11 @@ img {
   border-radius: 30px;
 }
 
+.send-order-btn {
+  display: block;
+  margin:auto;
+  margin-bottom: 40px;
+}
 
 @media screen and (min-width: 1000px) {
   .banner {
@@ -171,5 +176,6 @@ img {
    color: white;
    padding-top: 35px;
  }
+
 
   /* ^ CSS for final page*/
