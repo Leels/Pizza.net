@@ -1,8 +1,8 @@
-# Pizza.net
+# Pizza.Net
 ## By Lela Smith
 
 ### Description
-#### This website will allow the user to order a pizza from Cyperspace. The site will grab the user's information for delivery then show a page to submit the order. User can choose the size of pizza, crust type, toppings and beverage options. User may also order a second pizza if they wish. The site will determine the price of the order depending on the previous selections and will display the price along with the order information. Finally a confirmation page will display confirming the order. With this site I hope to make Sandra Bullock proud. 
+#### This website will allow the user to order a pizza from Cyperspace. The site will grab the user's information for delivery then show a page to find the price and submit the order. The user can choose the size of pizza, crust type, toppings and beverage options. The user may also order a second pizza if they wish. The site will determine the price of the order depending on the previous selections and will display the price along with the order information. This website was inspired by Sandra Bullock, as Angela Bennet, in The Net.
 
 ## GitHub Pages link
 

@@ -21,7 +21,7 @@
     <!-- html for intro page -->
 
     <div class="container-fluid intro">
-      <form class="customer-info">
+      <form id="customer-info">
         <div class="row">
           <div class="col">
             <div class="row">
@@ -41,7 +41,7 @@
             <div class="card">
               <div class="row">
                 <label>Name:</label>
-                <input id="name" type="text" name="name" placeholder="Angela Bennet" style="width: 35%">
+                <input id="name" type="text" name="name" placeholder="Angela Bennet" style="width: 35%" required>
               </div>
               <div class="row">
                 <label>Address:</label>
@@ -222,7 +222,10 @@
             <!-- <div id="confirmation"> -->
               <h2 id="confirmation">Price: <span id="orderPrice"></span></h2>
             <!-- </div> -->
-            <button class="submit-btn" type="submit">Send Order Now!</button>
+            <div id="initially-hidden">
+              <button class="send-order-btn" type="btn">Send Order Now!</button>
+            </div>
+            <button class="submit-btn" type="submit">See Price</button>
               <!-- <p>Please confirm your order:</p> -->
               <!-- <ul>
                 <li>One <span id="orderSize"></span> <span id="orderCrust"></span> pizza</li>

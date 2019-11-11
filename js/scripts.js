@@ -1,4 +1,4 @@
-//Back-end logic for pizza order--
+//Back-end logic for pizza order//
 
 function PizzaOrder(size, crust, beverages, combo, meatToppings, veggieToppings) {
   this.size = size,
@@ -46,7 +46,20 @@ PizzaOrder.prototype.orderPrice = function() {
     return this.price.toFixed(2);
 }
 
-//Front-end logic for pizza order
+//Front End logic for customer information form//
+
+$(document).ready(function(){
+  $("form#customer-info").submit(function(event){
+    event.preventDefault();
+
+    var nameInput = $("input#name").val();
+
+    $("#customer-info").hide();
+    $("#pizza-order").slideDown("slow");
+  });
+  });
+
+//Front-end logic for pizza order//
 
 $(document).ready(function(){
   $("form#pizza-order").submit(function(event){
@@ -71,6 +84,8 @@ $(document).ready(function(){
     $("#orderPrice").text("$" + totalPrice);
 
     $("#confirmation").show();
+    $(".submit-btn").hide();
+    $("#initially-hidden").show();
 
   });
 });
