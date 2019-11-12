@@ -10,13 +10,13 @@ body {
 }
 
 .banner {
-    padding-left: 40px;
-    padding-right: 10px;
-    margin-top: 20px;
-    background-image: linear-gradient(#ff6600, #ffdd99);
-    border: solid 5px #ffcc00;
-    background: auto 100%;
-    text-align: center;
+  padding-left: 40px;
+  padding-right: 10px;
+  margin-top: 20px;
+  background-image: linear-gradient(#ff6600, #ffdd99);
+  border: solid 5px #ffcc00;
+  background: auto 100%;
+  text-align: center;
 }
 
 h1 {
@@ -83,9 +83,9 @@ img {
 
 @media screen and (min-width: 1000px) {
   .banner {
-      text-align: right;
-      padding-right: 320px;
-      padding-left: 220px;
+    text-align: right;
+    padding-right: 320px;
+    padding-left: 220px;
   }
 
   h1 {
@@ -110,16 +110,17 @@ img {
 }
 
 .delivery {
-  text-align: right;
+  text-align: center;
 }
 
- .intro #customer-info {
+.intro #customer-info {
   background-color: #e63900;
   border: solid 5px #ffcc00;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   text-shadow: 2px 2px black;
   color: white;
+  margin-bottom: 25px;
 
 }
 
@@ -148,34 +149,35 @@ img {
   color: yellow;
 }
 
- /* ^ CSS for intro page*/
+/* ^ CSS for intro page*/
 
 
- /* v CSS for final page*/
- .final img {
-   display: block;
-   width: 80%;
-   height: auto;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 10%
- }
+/* v CSS for final page*/
+.final img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%
+}
 
-  .final {
-   background-color: #0000cc;
-   border: solid 5px #e63900;
-   text-align: center;
-   font-family: 'Abril Fatface', cursive;
-   text-shadow: 2px 2px black;
-   color: white;
- }
+.final {
+  background-color: #0000cc;
+  border: solid 5px #e63900;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 2px 2px black;
+  color: white;
+  margin-bottom: 25px;
+}
 
- .final h2 {
-   color: white;
-   padding-top: 100px;
-   font-size: 300%
+.final h2 {
+  color: white;
+  font-size: 300%;
+  margin-top: 20%;
+  margin-bottom: 15%;
+}
 
- }
 
-
-  /* ^ CSS for final page*/
+/* ^ CSS for final page*/

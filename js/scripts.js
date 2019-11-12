@@ -12,13 +12,13 @@ function PizzaOrder(size, crust, beverages, combo, meatToppings, veggieToppings)
 
 PizzaOrder.prototype.orderPrice = function() {
   if (this.size === "small") {
-     this.price += 8;
+    this.price += 8;
   } else if (this.size === "medium") {
-     this.price +=10;
+    this.price +=10;
   } else if (this.size === "large") {
-     this.price +=12;
+    this.price +=12;
   } else if (this.size === "x-large") {
-     this.price +=14;
+    this.price +=14;
   }
 
   if (this.crust === "deep-dish") {
@@ -32,18 +32,18 @@ PizzaOrder.prototype.orderPrice = function() {
   }
 
   for (var i = 0; i < this.beverages.length; i++) {
-      this.price += 3;
-    }
+    this.price += 3;
+  }
 
   for (var i = 0; i < this.meatToppings.length; i++) {
-      this.price += 2.5;
-    }
+    this.price += 2.5;
+  }
 
   for (var i = 0; i < this.veggieToppings.length; i++) {
-      this.price += 1.5;
-    }
+    this.price += 1.5;
+  }
 
-    return this.price.toFixed(2);
+  return this.price.toFixed(2);
 }
 
 
@@ -61,48 +61,48 @@ $(document).ready(function(){
     $("#pizza-order").slideDown("slow");
     $(".name").text(nameInput).val();
 
-//Front-end logic for pizza order//
+    //Front-end logic for pizza order//
 
-$(document).ready(function(){
-  $("form#pizza-order").submit(function(event){
-    event.preventDefault();
+    $(document).ready(function(){
+      $("form#pizza-order").submit(function(event){
+        event.preventDefault();
 
-    var inputSize = $('input[name=size]:checked').val();
-    var inputCrust = $('input[name=crust]:checked').val();
-    var inputBeverages = $('input:checkbox[name=beverages]:checked').map(function() {
-      return this.value;}).get();
-    var inputCombo = $('input[name=combo]:checked').val();
-    var inputMeatToppings = $('input:checkbox[name=meats]:checked').map(function() {
-      return this.value;}).get();
-    var inputVeggieToppings = $('input:checkbox[name=veggies]:checked').map(function() {
-      return this.value;}).get();
-    var newPizzaOrder = new PizzaOrder(inputSize, inputCrust, inputBeverages, inputCombo, inputMeatToppings, inputVeggieToppings);
-    var totalPrice = newPizzaOrder.orderPrice();
+        var inputSize = $('input[name=size]:checked').val();
+        var inputCrust = $('input[name=crust]:checked').val();
+        var inputBeverages = $('input:checkbox[name=beverages]:checked').map(function() {
+          return this.value;}).get();
+          var inputCombo = $('input[name=combo]:checked').val();
+          var inputMeatToppings = $('input:checkbox[name=meats]:checked').map(function() {
+            return this.value;}).get();
+            var inputVeggieToppings = $('input:checkbox[name=veggies]:checked').map(function() {
+              return this.value;}).get();
+              var newPizzaOrder = new PizzaOrder(inputSize, inputCrust, inputBeverages, inputCombo, inputMeatToppings, inputVeggieToppings);
+              var totalPrice = newPizzaOrder.orderPrice();
 
-    $("#orderSize").text(inputSize);
-    $("#orderCrust").text(inputCrust);
-    $("#orderToppings").text(inputCombo + inputMeatToppings + inputVeggieToppings);
-    $("#orderBeverages").text(inputBeverages);
-    $("#orderPrice").text("$" + totalPrice);
+              $("#orderSize").text(inputSize);
+              $("#orderCrust").text(inputCrust);
+              $("#orderToppings").text(inputCombo + inputMeatToppings + inputVeggieToppings);
+              $("#orderBeverages").text(inputBeverages);
+              $("#orderPrice").text("$" + totalPrice);
 
-    $("#confirmation").show();
-    $(".submit-btn").hide();
-    $("#initially-hidden").show();
+              $("#confirmation").show();
+              $(".submit-btn").hide();
+              $("#initially-hidden").show();
 
-    if (pickUpDelivery === "delivery") {
-       $(".delivery-confirmation").show();
-    } else if (pickUpDelivery === "pick-up") {
-       $(".pickup-confirmation").show();
-    }
+              if (pickUpDelivery === "delivery") {
+                $(".delivery-confirmation").show();
+              } else if (pickUpDelivery === "pick-up") {
+                $(".pickup-confirmation").show();
+              }
 
-    $(".send-order-btn").click(function(){
-      $("#pizza-order").hide();
-      $(".final").slideDown("slow");
+              $(".send-order-btn").click(function(){
+                $("#pizza-order").hide();
+                $(".final").slideDown("slow");
 
+              });
+
+            });
+          });
+
+        });
       });
-
-  });
-});
-
-});
-});
