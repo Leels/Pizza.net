@@ -1,6 +1,6 @@
 /* v CSS for order form */
 
-#pizza-order, #confirmation, #initially-hidden, .final {
+#pizza-order, #confirmation, #initially-hidden, .final, .pickup-confirmation, .delivery-confirmation {
   display: none;
 }
 
@@ -74,17 +74,11 @@ img {
   font-family: 'Abril Fatface', cursive;
   padding: 15px 32px;
   text-align: center;
-  display: inline-block;
   font-size: 30px;
-  margin: 10px 140px;
+  margin: auto;
   margin-bottom: 40px;
   border-radius: 30px;
-}
-
-.send-order-btn {
   display: block;
-  margin:auto;
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -115,9 +109,13 @@ img {
   margin-top: 20%
 }
 
+.delivery {
+  text-align: right;
+}
+
  .intro #customer-info {
   background-color: #e63900;
-  border: solid 8px #ffcc00;
+  border: solid 5px #ffcc00;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   text-shadow: 2px 2px black;
@@ -160,12 +158,12 @@ img {
    height: auto;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 20%
+   margin-top: 10%
  }
 
   .final {
    background-color: #0000cc;
-   border: solid 8px #ffcc00;
+   border: solid 5px #e63900;
    text-align: center;
    font-family: 'Abril Fatface', cursive;
    text-shadow: 2px 2px black;
@@ -174,7 +172,9 @@ img {
 
  .final h2 {
    color: white;
-   padding-top: 35px;
+   padding-top: 100px;
+   font-size: 300%
+
  }
 
 

@@ -46,6 +46,8 @@ PizzaOrder.prototype.orderPrice = function() {
     return this.price.toFixed(2);
 }
 
+
+
 //Front End logic for customer information form//
 
 $(document).ready(function(){
@@ -53,10 +55,11 @@ $(document).ready(function(){
     event.preventDefault();
 
     var nameInput = $("input#customerName").val();
+    var pickUpDelivery = $('input[name=delivery]:checked').val();
 
     $("#customer-info").hide();
     $("#pizza-order").slideDown("slow");
-    $("#name").text(nameInput).val();
+    $(".name").text(nameInput).val();
 
 //Front-end logic for pizza order//
 
@@ -86,10 +89,16 @@ $(document).ready(function(){
     $(".submit-btn").hide();
     $("#initially-hidden").show();
 
+    if (pickUpDelivery === "delivery") {
+       $(".delivery-confirmation").show();
+    } else if (pickUpDelivery === "pick-up") {
+       $(".pickup-confirmation").show();
+    }
 
     $(".send-order-btn").click(function(){
       $("#pizza-order").hide();
       $(".final").slideDown("slow");
+
       });
 
   });

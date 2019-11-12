@@ -67,24 +67,24 @@
               </div>
             </div>
             <div class="form-group delivery">
-            <div class="row">
+              <div class="row">
                 <div class="col">
                   <br>
-                <div class="radio">
-                  <h3><input name="delivery" type="radio" value="delivery" checked> Delivery </h3>
+                  <div class="radio">
+                    <h3><input name="delivery" type="radio" value="delivery" checked> Delivery </h3>
+                  </div>
+                </div>
+                <div class="col">
+                  <br>
+                  <div class="radio">
+                    <h3><input name="delivery" type="radio" value="pick-up"> Pick Up</h3>
+                  </div>
+                </div>
+                <div class="col">
+                  <button class="submit-btn" type="submit">Done</button>
                 </div>
               </div>
-              <div class="col">
-                <br>
-                <div class="radio">
-                  <h3><input name="size" type="radio" value="medium"> Pick Up</h3>
-                </div>
-                </div>
-              <div class="col">
-            <button class="submit-btn" type="submit">Done</button>
-          </div>
-        </div>
-        </div>
+            </div>
           </div>
           <div class="col">
             <div class="row">
@@ -220,7 +220,7 @@
               </div>
             </div>
             <!-- <div id="confirmation"> -->
-              <h2 id="confirmation">Price: <span id="orderPrice"></span></h2>
+            <h2 id="confirmation">Price: <span id="orderPrice"></span></h2>
             <!-- </div> -->
             <div id="initially-hidden">
               <button class="send-order-btn" type="btn">Send Order Now!</button>
@@ -235,43 +235,49 @@
     <!-- html for final page -->
 
     <div class="container-fluid final">
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <img src="images/pizza.png" alt="">
-            </div>
-            <br>
-            <div class="row">
-              <img src="images/pizza.png" alt="">
-            </div>
-            <br>
-            <div class="row">
-              <img src="images/pizza.png" alt="">
-            </div>
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <img src="images/pizza.png" alt="">
           </div>
-          <div class="col-8 conf">
-            <h2>Your pizza will arrive in 45 minutes. Gratuity not included. Thank you for your order, <span id="name"></span>!</h2>
-
-        </div>
-          <div class="col">
-            <div class="row">
-              <img src="images/pizza.png" alt="">
-            </div>
-            <br>
-            <div class="row">
-              <img src="images/pizza.png" alt="">
-            </div>
-            <br>
-            <div class="row">
-              <img src="images/pizza.png" alt="">
-            </div>
+          <br>
+          <div class="row">
+            <img src="images/pizza.png" alt="">
           </div>
-
+          <br>
+          <div class="row">
+            <img src="images/pizza.png" alt="">
+          </div>
         </div>
-      </form>
+        <div class="col-8 conf">
+          <div class="delivery-confirmation">
+            <h2>Your pizza will arrive in 45 minutes.<br>
+              Gratuity not included.<br>Thank you for your order, <br><span class="name"></span>!</h2>
+            </div>
+            <div class="pickup-confirmation">
+              <h2>Your pizza will be ready for pick-up in 25 minutes.<br>
+                Thank you for your order, <br><span class="name"></span>!</h2>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <img src="images/pizza.png" alt="">
+              </div>
+              <br>
+              <div class="row">
+                <img src="images/pizza.png" alt="">
+              </div>
+              <br>
+              <div class="row">
+                <img src="images/pizza.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- html for final page end-->
     </div>
-
-    <!-- html for final page end-->
-  </div>
-</body>
-</html>
+  </body>
+  </html>
