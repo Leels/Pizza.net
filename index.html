@@ -19,7 +19,6 @@
     </div>
 
     <!-- html for intro page -->
-
     <div class="container-fluid intro">
       <form id="customer-info" autocomplete="off">
         <div class="row">
@@ -114,16 +113,16 @@
           <div class="form-group card">
             <h2>Select a Size:</h2>
             <div class="radio">
-              <h3><input name="size" type="radio" value="small" checked> Small (12")  <span id="prices">$8</span></h3>
+              <h3><input name="size" type="radio" value="Small" checked> Small (12")  <span id="prices">$8</span></h3>
             </div>
             <div class="radio">
-              <h3><input name="size" type="radio" value="medium"> Medium (16")  <span id="prices">$10</span></h3>
+              <h3><input name="size" type="radio" value="Medium"> Medium (16")  <span id="prices">$10</span></h3>
             </div>
             <div class="radio">
-              <h3><input name="size" type="radio" value="large"> Large (20")  <span id="prices">$12</span></h3>
+              <h3><input name="size" type="radio" value="Large"> Large (20")  <span id="prices">$12</span></h3>
             </div>
             <div class="radio">
-              <h3><input name="size" type="radio" value="x-large"> X-Large (24")  <span id="prices">$14</span></h3>
+              <h3><input name="size" type="radio" value="X-large"> X-Large (24")  <span id="prices">$14</span></h3>
             </div>
           </div>
           <!-- crust -->
@@ -220,9 +219,10 @@
                 </div>
               </div>
             </div>
-            <!-- <div id="confirmation"> -->
-            <h2 id="confirmation">Price: <span id="orderPrice"></span></h2>
-            <!-- </div> -->
+            <div id="confirmation">
+              <h2>Price: <span id="orderPrice"></span></h2>
+              <h5>Order Details: <span id="orderSizeCrust"></span> pizza with <span id="orderCombo"></span> <span id="orderMeatToppings"> </span><span id="orderVeggieToppings"></span> <span id="orderBeverages"></span>.</h5>
+            </div>
             <div id="initially-hidden">
               <button class="send-order-btn" type="btn">Send Order Now!</button>
             </div>
@@ -234,7 +234,6 @@
     <!-- pizza order form html end -->
 
     <!-- html for final page -->
-
     <div class="container-fluid final">
       <div class="row">
         <div class="col">
@@ -273,12 +272,12 @@
                 <img src="images/pizza.png" alt="">
               </div>
             </div>
-
           </div>
-        </form>
+        </div>
       </div>
-
-      <!-- html for final page end-->
     </div>
-  </body>
-  </html>
+      <!-- html for final page end-->
+
+  </div>
+</body>
+</html>
